@@ -6,7 +6,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/news-eyecatch.jpg" alt="no-img">
 
       <div class="page-title">
-        <h1 class="page-title__h1">NEWS</h1>
+        <h1 class="page-title__h1">個人的NEWS</h1>
         <p class=></p>
       </div>
     </div>

@@ -119,7 +119,7 @@
         </p>
       </div>
       <div id="news" class="wrap">
-        <h2 class="section-title">BRAND NEWS</h2>
+        <h2 class="section-title">個人的NEWS</h2>
         <div class="news-contain">
           <ul>
             <?php
@@ -131,10 +131,10 @@
             );
             if (have_posts()) : while ($posts->have_posts()) : $posts->the_post();
             ?>
-                <!-- ニュースというカスタム投稿タイプのサブループ開始 -->
+
                 <li class="news-list">
                   <p class="news-date"><?php echo get_the_date('Y-m-d'); ?></p>
-                  <!-- 投稿日付の出力 -->
+
                   <p class="news-category">
                     <?php
                     $days = 3;
@@ -149,21 +149,21 @@
                       endif;
                     endif;
                     ?>
-                    <!-- 3日以内に投稿されている投稿にはNewと表示をする -->
+
                   </p>
                   <a href="<?php the_permalink(); ?>" class="news-title">
                     <?php the_title(); ?>
-                    <!-- タイトルの出力 -->
+
                   </a>
                 </li>
             <?php endwhile;
             endif;
             wp_reset_query(); ?>
-            <!-- サブループ終了 -->
+
           </ul>
           <p class="news-articles_link">
-            <a href="<?php echo get_post_type_archive_link('news'); ?>" class="news-articles_link_text">ニュース一覧はこちら→</a>
-            <!-- ニュースアーカイブページへのリンク -->
+            <a href="<?php echo get_post_type_archive_link('news'); ?>" class="news-articles_link_text">個人的ニュース一覧はこちら→</a>
+
           </p>
         </div>
       </div>
